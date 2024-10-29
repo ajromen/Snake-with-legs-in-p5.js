@@ -1,7 +1,7 @@
 class Budala{
-  constructor(x,y,fi,i){
-    this.loc=new p5.Vector(x,y)
-    this.fi=fi;
+  constructor(i){
+    this.loc
+    this.fi
     this.index=i
     
     this.indexFaktor=0
@@ -12,6 +12,9 @@ class Budala{
     this.indexFaktor=-this.index/10+10
     this.miniRebraVel=rebroVelicina*this.indexFaktor/12
     this.razmakRebarova=razmakRebara*this.indexFaktor/12
+  }
+  promeniPocetnuLokaciju(x,y){
+    this.loc=new p5.Vector(x,y)
   }
   crtajSegment(prosli){
     stroke(255)

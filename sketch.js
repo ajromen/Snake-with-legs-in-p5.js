@@ -18,9 +18,14 @@ function setup() {
   rebroVelicina=razmakRebara*3;
   glavaVelicina=rebroVelicina;
 
+  let xLok=width/4
   for(let i=0;i<brojSegmenata;i++){
-    budale.push(new Budala(width/4+i*razmakRebara,height/2,0,i));
+    
+    budale.push(new Budala(i));
     budale[i].konstruktorNormalan();
+    
+    xLok+=budale[i].razmakRebarova
+    budale[i].promeniPocetnuLokaciju(xLok,height/2)
   }
   
   glava=new createVector(width/4,height/2)
