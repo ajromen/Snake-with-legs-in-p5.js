@@ -7,8 +7,8 @@ let glavaSlika
 let glavaFi=0
 let glavaVelicina
 function preload(){
-  rebro=loadImage("/src/rebro.png")
-  glavaSlika=loadImage("/src/glava1.png")
+  rebro=loadImage("src/rebro.png")
+  glavaSlika=loadImage("src/glava1.png")
 }
 
 function setup() {
