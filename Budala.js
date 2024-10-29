@@ -17,7 +17,7 @@ class Budala{
     this.loc=new p5.Vector(x,y)
   }
   crtajSegment(prosli){
-    stroke(255)
+    
 
     line(this.loc.x,this.loc.y,prosli.x,prosli.y)
     push()
@@ -32,7 +32,7 @@ class Budala{
   pratiProslog(prosli){
     let dir=p5.Vector.sub(prosli,this.loc)  
     dir.normalize();
-    dir.mult(2)
+    dir.mult(brzina)
     if(dist(this.loc.x+dir.x,this.loc.y+dir.y,prosli.x,prosli.y)>this.razmakRebarova)
       this.loc.add(dir);
     
